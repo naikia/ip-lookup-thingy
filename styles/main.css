@@ -1,0 +1,134 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 50px;
+  margin: 15px;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lookup-box {
+  background: #121212;
+  padding: 40px;
+  border-radius: 12px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+  transform: scale(0.95);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lookup-box:hover {
+  transform: scale(1);
+  box-shadow: 0 0 30px rgba(0,0,0,1);
+}
+
+.lookup-box input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.lookup-box button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #00bfff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.lookup-box button:hover {
+  background-color: #009acd;
+}
+
+.lookup-box p {
+  margin: 8px 0;
+}
+
+.lookup-box .small {
+  font-size: 0.75em;
+  color: #aaa;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  margin: 15% auto;
+  padding: 25px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  color: #fff;
+  animation: slideDown 0.3s ease forwards;
+}
+
+.modal-content a {
+  color: #00bfff;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideDown {
+  from {transform: translateY(-20px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
