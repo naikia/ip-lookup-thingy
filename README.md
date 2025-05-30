@@ -1,5 +1,5 @@
 
-# 🌐 IP Lookup Thingy (PHP Version)
+# 🌐 IP Lookup Thingy
 
 A **dark mode** IP lookup tool built with PHP.
 
@@ -44,6 +44,7 @@ http://localhost:8000
   └── main.css
 index.php
 README.md
+LICENSE
 ```
 
 ---
